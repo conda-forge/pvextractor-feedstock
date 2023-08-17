@@ -1,5 +1,5 @@
 {% set name = "pvextractor" %}
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fdd7f1fa5181358f46414969352fbe44a7a9cb56fa224bd1f614efc182672308
+  sha256: a54e986760cef6b186e02d1c3d98d7e1c18e4e75c5d0b71343b5ff59fd9c09c3
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
