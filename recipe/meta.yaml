@@ -16,16 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
-    - astropy
-    - matplotlib-base >=2.0
-    - scipy
-    - qtpy
-    - spectral-cube
+    - python >=3.8
+    - numpy >=1.22
+    - astropy >=5.0
+    - matplotlib-base >=3.5
+    - scipy >=1.8
+    - qtpy >=2.0
+    - spectral-cube >=0.4
 
 test:
   imports:
